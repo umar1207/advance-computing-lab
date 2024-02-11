@@ -1,0 +1,15 @@
+Write a shell script for making a command for the following functionalities
+myp -1 sourcefolder
+myp -2 sourcefolder1 sourcefolder2 destinationfolder
+
+In functionality 1, let there be a source folder containing multiple
+files. The file names in the source folder should be appended with the 
+size of the files. 
+For example, let there be  a sourcefolder containing a file abc.txt with
+the size 450 bytes. The name of the resulting file should be abc450.txt, and so on.
+
+In the second functionality, files with uncommon names in source folder 1 
+and source folder 2 should be copied to the destination folder.
+For example, let there be two files xyz.dat, pqr.dat in soucrefolder1 and 
+files xyz.dat, def.dat in sourcefolder2. The files pqr.dat and def.dat should be copied 
+to destinationfolder.

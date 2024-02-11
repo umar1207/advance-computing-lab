@@ -25,6 +25,13 @@ replay_pid*
 
 #vs code
 .vscode
+.DS_Store
 
 #c++
 *.out
+
+#shell
+sourcefolder
+sourcefolder1
+sourcefolder2
+destinationfolder
