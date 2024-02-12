@@ -5,7 +5,7 @@ function functionality1 {
     source_folder=$2
     for file in "$source_folder"/*; do
         if [ -f "$file" ]; then
-            size=$(wc -c < "$file")
+            size=$(wc -c < "$file"  | tr -d '[:space:]')
             new_name="${file%.*}${size}.${file##*.}"
             mv "$file" "$new_name"
             echo "Renamed $file to $new_name"
