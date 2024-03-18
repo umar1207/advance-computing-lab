@@ -5,3 +5,4 @@
 ## 3 Shell Programming - Details in purpose.txt file - 12 February, 2024
 ## 4 Matric Chain Multiplication - DP Bottom-Up Approach - 5 March, 2024
 ## 5 NFA implementation - Non Deterministic Finite Automata - 11 March, 2024
+## 6 Convex Hull - Graham Scan Algorithm - 18 March, 2024
