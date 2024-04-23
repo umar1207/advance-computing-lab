@@ -35,3 +35,8 @@ sourcefolder
 sourcefolder1
 sourcefolder2
 destinationfolder
+
+# extras 
+build
+node_modules
+files
