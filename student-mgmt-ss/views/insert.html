@@ -1,0 +1,85 @@
+<!-- views/insert.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Student</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="navbarContainer"></div>
+    <script>
+        // Fetch and include the navbar HTML
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbarContainer').innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navbar:', error));
+    </script>
+
+    <h1 style="text-align: center; color: blue;">Insert Student</h1>
+    <div class="insertSearchForm">
+
+        <form action="/insert" method="POST">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="enrollmentNumber">Enrollment Number</label>
+            <input type="text" id="enrollmentNumber" name="enrollmentNumber" required><br><br>
+
+            <label for="facultyNumber">Faculty Number</label>
+            <input type="text" id="facultyNumber" name="facultyNumber" required><br><br>
+
+            <label for="course">Course</label>
+            <select id="course" name="course" required>
+                <option value="">Select Option</option>
+                <option value="Btech">B.Tech</option>
+                <option value="Mtech">M.Tech</option>
+            </select><br><br>
+
+            <label for="branch">Branch</label>
+            <select name="branch" id="branch" required>
+                <option value="">Select Branch</option>
+                <option value="Computer">Computer</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Civil">Civil</option>
+                <option value="Chemical">Chemical</option>
+            </select><br><br>
+
+            <label for="semester">Semester</label>
+            <select name="semester" id="semester" required>
+                <option value="">Select Semester</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select><br><br>
+
+            <label for="hostelAllotted">Hostel Allotted</label>
+            <select name="hostelAllotted" id="hostelAllotted" required>
+                <option value="">Select Option</option>
+                <option value="Nadeem Tarin Hall">Nadeem Tarin Hall</option>
+                <option value="Sulaiman Hall">Sulaiman Hall</option>
+                <option value="NRSC">NRSC</option>
+            </select><br><br>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <button type="submit">Insert</button>
+        </form>
+    </div>
+</body>
+
+</html>

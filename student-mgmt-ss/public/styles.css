@@ -1,0 +1,79 @@
+body 
+{
+    background-color: rgb(232, 227, 220);
+}
+
+.navbar {
+    background-color: #251f1f; 
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nav-item {
+    display: block;
+    color: #fff; 
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 30px 15px 30px; 
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: #555; 
+}
+
+.insertSearchForm {
+    justify-content: center;
+    text-align: center;
+}
+
+.myTable-data {
+    /* justify-content: center; */
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.myTable {
+    justify-content: center;
+    text-align: center;
+}
+
+.insertSearchForm, .deleteForm  {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.insertSearchForm label, .deleteForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.insertSearchForm input[type="text"],
+.insertSearchForm select {
+    width: 100%;
+    padding: 8px;
+    /* margin-bottom: 3px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+.insertSearchForm button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.insertSearchForm button:hover {
+    background-color: #45a049;
+}
