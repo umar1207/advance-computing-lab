@@ -1,0 +1,8 @@
+Consider a client and a server. At the client side, there are files such as File1, File2, ..., FileK containing some texts. 
+There is file FileS containing a word to be searched in the contents of File1, File2, ..., FileK.  
+The client reads the contents of File1, ..., FileK and sends the text contents of these files to the server. 
+Let the text contents sent to the server be TextOfFile1, TextOfFile2, ..., TextOfFileK. 
+The client reads the word to be searched which is contained in FileS and sends the word in text form, say TextOfFileS, to the server. 
+The server searches the word in the TextOfFile1 and computes its frequency of occurrence, say f1, searches the word in TextOfFile2 and computes its frequency of occurrence, say f2,  ..., and so on.  
+The server computes the sum of frequencies of occurrences  of the word. The server sends frequencies of occurrences of the word f1, f2, ...,  fk together with their sum to the client. 
+Write programs for client side and server side using socket programming for such a task. The client and server should preferably run on different machines.
